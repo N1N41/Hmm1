@@ -452,7 +452,7 @@ elseif Sea2 then
   end})
 end
 
---[[MainFarm:AddSection({"Christmas"})
+MainFarm:AddSection({"Christmas"})
 
 local TimeLabel = MainFarm:AddLabel({"Text", "Time for next gift : nil"})
 
@@ -555,7 +555,7 @@ MainFarm:AddToggle({"Auto Gift", false, function(Value)
       end
     end
   end)
-end})]]
+end})
 
 if Sea3 then
   MainFarm:AddSection({"Bone"})
@@ -1440,7 +1440,7 @@ elseif Sea3 then
   RipIndraToggle:Callback(function()ActiveButtonToggle:Set(false)end)
   ActiveButtonToggle:Callback(function()RipIndraToggle:Set(false)end)
   
-  --[[QuestsTabs:AddSection({"Ken Haki"})
+  QuestsTabs:AddSection({"Ken Haki"})
   
   QuestsTabs:AddToggle({
     Name = "Auto Ken Haki V2",
@@ -1448,7 +1448,7 @@ elseif Sea3 then
       getgenv().AutoKenV2 = Value
       AutoKenV2()
     end
-  })]]
+  })
   
   QuestsTabs:AddSection({"Musketeer Hat"})
   
@@ -2168,7 +2168,7 @@ if Sea3 then
     end
   })
   
-  --[[QuestsTabs:AddSection({"Soul Guitar"})
+  QuestsTabs:AddSection({"Soul Guitar"})
   
   QuestsTabs:AddToggle({
     Name = "Auto Soul Guitar <Soon>",
@@ -2176,9 +2176,9 @@ if Sea3 then
       getgenv().AutoSoulGuitar = Value
       AutoSoulGuitar()
     end
-  })]]
+  })
   
-  --[[QuestsTabs:AddSection({"Cursed Dual Katana"})
+  QuestsTabs:AddSection({"Cursed Dual Katana"})
   
   QuestsTabs:AddToggle({
     Name = "Auto CDK",
@@ -2186,7 +2186,7 @@ if Sea3 then
       getgenv().AutoCursedDualKatana = Value
       AutoCursedDualKatana()
     end
-  })]]
+  })
 end
 
 Teleport:AddSection({"Teleport to Sea"})
@@ -2607,7 +2607,7 @@ Misc:AddToggle({"Anti AFK", true, function(Value)
   end)
 end, "Misc/AntiAFK"})
 
---[[Shop:AddSection({"Christmas"})
+Shop:AddSection({"Christmas"})
 Shop:AddButton({"Buy 2x EXP (15 mins.) < 50 Candies >", function()FireRemote("Candies", "Check")FireRemote("Candies", "Buy", 1, 1)end})
 Shop:AddButton({"Stats Refund < 75 Candies >", function()FireRemote("Candies", "Check")FireRemote("Candies", "Buy", 1, 2)end})
 Shop:AddButton({"Race Reroll < 100 Candies >", function()FireRemote("Candies", "Check")FireRemote("Candies", "Buy", 1, 3)end})
@@ -2618,10 +2618,10 @@ Shop:AddSection({"Bones"})
 Shop:AddButton({"Buy Surprise < 50 Bones >", function()FireRemote("Bones", "Buy", 1, 1)end})
 Shop:AddButton({"Stats Refund < 150 Bones >", function()FireRemote("Bones", "Buy", 1, 2)end})
 Shop:AddButton({"Race Reroll < 300 Bones >", function()FireRemote("Bones", "Buy", 1, 3)end})]]
---[[Shop:AddSection({"Ectoplasm"})
+Shop:AddSection({"Ectoplasm"})
 Shop:AddButton({"Midnight Blade", function()end})
 Shop:AddButton({"Bizarre Rifle", function()end})
-Shop:AddButton({"Midnight Blade", function()end})]]
+Shop:AddButton({"Midnight Blade", function()end})
 Shop:AddSection({"Frags"})
 Shop:AddButton({"Race Rerol", function()
 FireRemote("BlackbeardReward", "Reroll", "1")FireRemote("BlackbeardReward", "Reroll", "2")end})
