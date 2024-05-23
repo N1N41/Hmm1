@@ -174,13 +174,13 @@ if Sea3 then
   AutoSea:AddToggle({Name = "Fish Boat", Flag = "Sea/FishBoat", Default = true,Callback = function(Value)
     getgenv().FishBoat = Value
   end})
-  --[[AddTextLabel(AutoSea, {"Sea Beast"})
+  AddTextLabel(AutoSea, {"Sea Beast"})
   AutoSea:AddToggle({Name = "Sea Beast",Default = true,Callback = function(Value)
     getgenv().SeaBeast = Value
   end})
   AutoSea:AddToggle({Name = "Triple Sea Beast",Default = true,Callback = function(Value)
     getgenv().SeaBeastTriple = Value
-  end})]]
+  end})
   AutoSea:AddSection({"Skill"})
   AutoSea:AddToggle({Name = "AimBot Skill Enemie", Flag = "Mastery/Aimbot", Default = true,Callback = function(Value)
     getgenv().SeaAimBotSkill = Value
@@ -326,14 +326,14 @@ if Sea3 and IsOwner then
 end
 local QuestsTabs = Window:MakeTab({"Quests/Items", "Swords"})
 local FruitAndRaid = Window:MakeTab({"Fruit/Raid", "Cherry"})
---[[local Informacoes = Window:MakeTab({"Info", "Search"})
+local Informacoes = Window:MakeTab({"Info", "Search"})
 Informacoes:AddSection({"Player"})
 local Nerd = Informacoes:AddParagraph({"Nerd < Accessories Info >"})
 task.spawn(function()
   while task.wait() do
     Nerd:SetDesc(FireRemote("Nerd"))
   end
-end)]]
+end)
 if PlayerLevel.Value < MaxLavel then
   local StatsTab = Window:MakeTab({"Stats", "signal"})
   local PointsSlider, Melee, Defense, Sword, Gun, DemonFruit = 1
