@@ -2617,7 +2617,7 @@ Shop:AddButton({"Buy 500 Frags < 100 Candies >", function()FireRemote("Candies",
 Shop:AddSection({"Bones"})
 Shop:AddButton({"Buy Surprise < 50 Bones >", function()FireRemote("Bones", "Buy", 1, 1)end})
 Shop:AddButton({"Stats Refund < 150 Bones >", function()FireRemote("Bones", "Buy", 1, 2)end})
-Shop:AddButton({"Race Reroll < 300 Bones >", function()FireRemote("Bones", "Buy", 1, 3)end})]]
+Shop:AddButton({"Race Reroll < 300 Bones >", function()FireRemote("Bones", "Buy", 1, 3)end})
 Shop:AddSection({"Ectoplasm"})
 Shop:AddButton({"Midnight Blade", function()end})
 Shop:AddButton({"Bizarre Rifle", function()end})
