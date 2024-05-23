@@ -3556,12 +3556,12 @@ end
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local Window = Fluent:CreateWindow({
-  Title = "redz Hub : Blox Fruits",
+  Title = "Dvinz Hub : Blox Fruits",
   SubTitle = "[ Old Source Free ]",
   TabWidth = 160,
   Size = UDim2.fromOffset(580, 460),
   Acrylic = false,
-  Theme = "Dark",
+  Theme = "blue",
   MinimizeKey = Enum.KeyCode.LeftControl
 })
 
