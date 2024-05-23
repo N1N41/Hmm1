@@ -37,7 +37,7 @@ function instance.new(class, properties)
     table.insert(instance.obj, inst)
     return inst
 end
-object.RauHub = instance.new("ScreenGui", {
+object.TsuoHub = instance.new("ScreenGui", {
     Name = "Mo Mo Be";
     Parent = game.CoreGui;
     ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
